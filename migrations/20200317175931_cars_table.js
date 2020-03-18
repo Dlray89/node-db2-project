@@ -15,6 +15,7 @@ exports.up = function(knex) {
       .unique()
       .index();//constrant
 
+      
   })
 };
 

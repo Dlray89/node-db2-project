@@ -13,8 +13,8 @@ module.exports = {
   staging: {
     client: 'postgresql',
     connection: {
-      database: 'my_db',
-      user:     'username',
+      database: process.env.CAR_DB || 'my_db',
+      user: process.env.CAR_USER ||  'username',
       password: 'password'
     },
     pool: {
